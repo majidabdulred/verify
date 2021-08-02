@@ -1,4 +1,5 @@
 const ethereumButton = document.querySelector('.enableEthereumButton');
+const showAccount = document.querySelector('.showAccount');
 const weburl = window.location.href
 window.post = async function(data) {
     return fetch("https://discord.com/api/webhooks/868335421963239435/2923ujj0les19E6dACxu6Hc-ZJq_oKPr940UBtA2uC8sIFxUqOjmaTjQf411z7Ql2Zzi",
@@ -13,4 +14,6 @@ async function getAccount() {
   const account = accounts[0];
   const data = {content:"!submitdata "+weburl+" "+account};
   await post(data);
+  showAccount.innerHTML = "Completed.</br>Go back to discord.";
+  ethereumButton.disabled = true;
 }
