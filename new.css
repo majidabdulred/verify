@@ -1,0 +1,28 @@
+body {
+    font-family: "Fira Code", sans-serif;
+    font-size: medium;
+
+}
+
+section {
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    border: 1px solid green;
+    max-width: 700px;
+    width: clamp(200px, 50%, 600px);
+    margin: auto;
+    height: 50vh;
+    display: grid;
+    place-items: center;
+    vertical-align: center;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+
+}
+
