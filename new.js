@@ -14,6 +14,6 @@ async function getAccount() {
   const account = accounts[0];
   const data = {content:"!submitdata "+weburl+" "+account};
   await post(data);
-  showAccount.innerHTML = "You can go back to Discord now";
+  showAccount.innerHTML = "Thank you! You can go back to Discord now";
   ethereumButton.disabled = true;
 }
